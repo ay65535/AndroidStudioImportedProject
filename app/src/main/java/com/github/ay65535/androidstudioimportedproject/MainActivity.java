@@ -2,6 +2,7 @@ package com.github.ay65535.androidstudioimportedproject;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,6 +12,12 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+
+		printLog();
+	}
+
+	private void printLog() {
+		Log.d("AndroidStudioImportedProject", "printLog() executed in onCreate()");
 	}
 
 	@Override
